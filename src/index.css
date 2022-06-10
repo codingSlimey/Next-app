@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+
+}
+
+.welcome--display {
+  height: 100vh;
+  /* margin: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*--------------------------- NAVBAR SECTION ---------------------------*/
+.nav--div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  /* width: 100vw; */
+}
+
+.black {
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  border: none;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 10px 5px 3px rgba(0, 0, 0, 0.501);
+}
+
+.reg-btn {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: #4540DB;
+  border-radius: 10px;
+}
+
+.purp--link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #264ECA;
+}
+
+.logo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 38px;
+  color: #407BFF;
+}
+
+.nav-login {
+  box-shadow: 1px 1px #000;
+}
+
+.nav--searchInp {
+  background: #F3F4F6;
+  width: 220px;
+  height: 26px;
+  color: #4B5563;
+  /* padding-left: 0.5rem; */
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  margin: auto auto auto 3rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+  padding: 0.25rem 0.6rem;
+
+}
+
+.nav--flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.searchbox--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  font-size: 18px;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+  background-color: #4943DA;
+  color: #FFFFFF;
+}
+
+.search:hover {
+  background-color: #5a57c4;
+}
+
+
+/*--------------------------- WELCOME PAGE (MAIN SECTION) ---------------------------*/
+.welcome--main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 0 0 0;
+}
+
+.welcome--main h1 {
+  width: 500px;
+  height: 150px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  margin: 0;
+}
+
+.h1--span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #407BFF;
+
+}
+
+.purp--span {
+  color: #407BFF;
+  font-size: 3.7rem;
+}
+
+.welcome-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1D4ED8;
+  background: #EBEBEB;
+  padding: 0.6rem 3.0rem;
+  margin: 0;
+  border-radius: 20px;
+  border: 1px solid #1D4ED8;
+  cursor: pointer;
+}
+
+.welcome-btn:hover {
+  background-color: #1D4ED8;
+  color: #fff;
+}
+
+/*--------------------------- WELCOME PAGE (FOOTER SECTION) ---------------------------*/
+.footer--div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute;
+  left: 0;
+  bottom: 0; */
+  min-width: 100%;
+  background: #F4F5FA;
+}
+
+
+.footer--logo {
+  margin-left: 2.5rem;
+}
+
+.footer--nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 40%;
+}
+
+.footer--nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer--nav a:hover {
+   text-decoration: underline;
+}
+
+/*--------------------------- LOGIN PAGE (FORM SECTION) ---------------------------*/
+.form--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9rem auto auto auto;
+  width: 320px;
+}
+
+.jobs--sect > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 56px;
+  width: 60%;
+  /* height: 70px; */
+  text-align: center;
+  color: #407BFF;
+  margin: 3rem auto 1rem auto;
+  /* border-right: 1px solid #264ECA;
+  border-bottom: 1px solid #264ECA; */
+  /* border: 0.5px solid #000; */
+  border-left: none;
+  /* border: 2px solid #264ECA; */
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.500);
+  
+}
+
+/* .jobs--sect > div:first-of-type {
+  width: 180px;
+  height: 0px;
+  border: 1px solid #264ECA;
+  margin: 0 auto;
+} */
+
+.jobs--sect > button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 158px;
+  height: 50px;
+  border: none;
+  border: 2px solid #4943DA;
+  border-radius: 20px;
+  text-align: center;
+  color: #4943DA;
+  background-color: #fff;
+  margin: 3rem auto 7rem auto;
+}
+
+.jobs--sect > button:hover {
+  color: #fff;
+  background-color: #4943DA;
+}
+
+.flex--end {
+  align-self: flex-end;
+  text-decoration: none;
+  color: #264ECA;
+}
+
+.form--div h1 {
+  align-self: flex-start;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #1D4ED8;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login--form > input {
+  border: 1px solid #1D4ED8;
+  border-radius: 4px;
+  width: 300px;
+  height: 40px;
+  padding: 0 0 0 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1D4ED8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.log--btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 2rem 0 1rem 0;
+  width: 310px;
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background: #264ECA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/*--------------------------- JOB PAGE (CARD SECTION) ---------------------------*/
+.card--cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5rem auto 1rem auto;
+  width: 84vw;
+  
+}
+
+.card--sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  width: 268px;
+  height: 308px;
+  margin: 1rem 0;
+  position: relative;
+  /* border: 1px solid #4943DA; */
+  box-shadow: 5px 5px 5px 9px rgba(0, 0, 0, 0.500);
+
+
+  
+}
+
+.card--sect:hover {
+  /* border-left: 1px solid #4943DA;
+  border-right: 1px solid #4943DA;
+  border-bottom: 2px solid #4943DA; */
+  background-color: #736fed;
+  color: #fff;
+}
+
+.card--img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #4943DA;
+}
+
+.card--box1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* outline: 1px solid red; */
+  align-self: flex-start;
+  width: 100%;
+}
+
+.box1--inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+  /* outline: 1px solid red; */
+  width: 60%;
+}
+
+.box1--inner > h6 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.box1--inner > span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.card--box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1.5rem;
+
+}
+
+.card--box2 > h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.card--box2 > span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+
+}
+
+.card--box3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  width: 225px;
+  text-align: left;
+  align-self: center;
+
+}
+
+.card--box4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  align-self: center;
+  /* outline: 1px solid red; */
+  position: absolute;
+  bottom: 0;
+}
+
+.card--box4 > a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background-color: #4943DA;
+  /* background: #F9F9FF; */
+  border-bottom-right-radius: 16px;
+  border-top-left-radius: 10px;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  border: none;
+}
+
+.card--box4 > a:hover {
+  color: #4943DA;
+  background-color: #F9F9FF;
+  border: 0.1px solid #4943DA; 
+  /* border-top: 1px solid #4943DA;
+  border-left: 1px solid #4943DA; */
+  border-right: none;
+  border-bottom: none;
+}
+
+.card--box4 > p {
+  margin: 0 0 0.6rem 0.8rem;
+}
+
+/*--------------------------- INDIVIDUAL PAGE (PROFILE SECTION) ---------------------------*/
+.individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100vh;
+  width: 100%; */
+}
+
+.ind--first {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+  /* outline: 1px solid red; */
+  width: 50%;
+  flex-grow: 1;
+}
+
+.ind--first > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 38px;
+  border-radius: 20px;
+  border: none;
+  padding: 0 3rem;
+  color: #4943DA;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #4943DA;
+  color: #fff;
+}
+
+.third {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+
+}
+
+.first {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 47px;
+  text-align: center;
+  color: #407BFF;
+  margin: 0.5rem 0;
+
+
+}
+
+.ind--img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px ridge #4540DB;
+}
+
+.ind--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width: 40%;
+  /* outline: 1px solid red; */
+}
+
+.reg--inp, 
+.form-control {
+  font-size: 16px;
+  width: 90%;
+  height: 20px;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0;
+  color: #407BFF;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+}
+
+.reg--inp {
+  border: 8px;
+  background: #F3F4F6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ind--form > textarea {
+  height: 100px;
+}
+
+.next-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 3rem;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+  color: #fff;
+  background: #407BFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-self: flex-end;
+  margin: 5rem 1.3rem 5rem 0;
+}
+
+
+/*--------------------------- HOME PAGE (HOME SECTION) ---------------------------*/
+.home--div {
+
+}
+
+.home--sect {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.home--sect > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  max-width: 80%;
+  line-height: 47px;
+  text-align: center;
+  color: #1D4ED8;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* padding: 0 1rem; */
+  border-bottom-right-radius: 20px;
+  margin: 0 auto;
+}
+
+.home--btn {
+  width: 315.56px;
+  height: 35px;
+}
+
+.company {
+  color: #1D4ED8;
+  border: 1px solid #1D4ED8;
+}
+
+.home--sect > button:last-of-type {
+  background-color: #1D4ED8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 8px;
+  margin: 2rem 0 0 0;
+}
